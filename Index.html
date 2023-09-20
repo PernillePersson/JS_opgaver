@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS opgaver</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="script.js"></script>
+</head>
+<body>
+<nav>
+  <ul>
+    <li>
+      <a href="#lommeregner">Simpel Lommeregner</a>
+    </li>
+    <li>
+      <a href="#gættal">Gæt et tal</a>
+    </li>
+    <li>
+      <a href="#todo">To-do liste</a>
+    </li>
+    <li>
+      <a href="#temp">Temperaturomregner</a>
+    </li>
+    <li>
+      <a href="#billede">Billede-karrusel</a>
+    </li>
+    <li>
+      <a href="#farve">Farveskifter</a>
+    </li>
+    <li>
+      <a href="#valuta">Valutaomregner</a>
+    </li>
+    <li>
+      <a href="#kalender">Simpel Kalender</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="lommeregner" style="width: 50%; margin: auto; margin-top: 10px;">
+  <table id="calcu" style="margin: auto">
+    <tr>
+      <td colspan="2">
+        <input type="text" id="result">
+      </td>
+      <td><input type="button" value="c" onclick="clr()"></td>
+      <td><input class="symb" type="button" style="background-color: #e252d6" value="/" onclick="setMetode(3)"></td>
+    </tr>
+
+    <tr>
+      <td><input type="button" value="1" onclick="tal(1)"></td>
+      <td><input type="button" value="2" onclick="tal(2)"></td>
+      <td><input type="button" value="3" onclick="tal(3)"></td>
+      <td><input class="symb" type="button" style="background-color: #e252d6" value="*" onclick="setMetode(2)"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" onclick="tal(4)"></td>
+      <td><input type="button" value="5" onclick="tal(5)"></td>
+      <td><input type="button" value="6" onclick="tal(6)"></td>
+      <td><input class="symb" type="button" style="background-color: #e252d6" value="-" onclick="setMetode(1)"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="7" onclick="tal(7)"></td>
+      <td><input type="button" value="8" onclick="tal(8)"></td>
+      <td><input type="button" value="9" onclick="tal(9)"></td>
+      <td><input class="symb" type="button" style="background-color: #e252d6" value="+" onclick="setMetode(0)"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="button" value="0" onclick="tal(0)">
+      </td>
+      <td><input type="button" value="," onclick="tal(',')"></td>
+      <td><input class="symb" type="button" style="background-color: #e252d6" value="=" onclick="solve()"></td>
+    </tr>
+  </table>
+</div>
+
+<div id="gættal">
+
+</div>
+
+<div id="todo">
+
+</div>
+
+<div id="temp">
+
+</div>
+
+<div id="billede">
+
+</div>
+
+<div id="farve">
+
+</div>
+
+<div id="valuta">
+
+</div>
+
+<div id="kalender">
+
+</div>
+</body>
+</html>
