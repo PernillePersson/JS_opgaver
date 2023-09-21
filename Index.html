@@ -50,9 +50,9 @@
     </tr>
 
     <tr>
-      <td><input type="button" value="1" onclick="tal(1)"></td>
-      <td><input type="button" value="2" onclick="tal(2)"></td>
-      <td><input type="button" value="3" onclick="tal(3)"></td>
+      <td><input type="button" value="7" onclick="tal(7)"></td>
+      <td><input type="button" value="8" onclick="tal(8)"></td>
+      <td><input type="button" value="9" onclick="tal(9)"></td>
       <td><input class="symb" type="button" style="background-color: #e252d6" value="*" onclick="setMetode(2)"></td>
     </tr>
     <tr>
@@ -62,9 +62,9 @@
       <td><input class="symb" type="button" style="background-color: #e252d6" value="-" onclick="setMetode(1)"></td>
     </tr>
     <tr>
-      <td><input type="button" value="7" onclick="tal(7)"></td>
-      <td><input type="button" value="8" onclick="tal(8)"></td>
-      <td><input type="button" value="9" onclick="tal(9)"></td>
+      <td><input type="button" value="1" onclick="tal(1)"></td>
+      <td><input type="button" value="2" onclick="tal(2)"></td>
+      <td><input type="button" value="3" onclick="tal(3)"></td>
       <td><input class="symb" type="button" style="background-color: #e252d6" value="+" onclick="setMetode(0)"></td>
     </tr>
     <tr>
@@ -83,32 +83,38 @@
     <input id="num" type="number" max="100" min="0">
     <input type="button" value="OK" style="all: revert" onclick="guess()">
   </div>
-  <h2 id="gættedetal">Gættede tal: </h2>
+  <h3 id="gættedetal">Gættede tal: </h3>
   <h2 id="respons"></h2>
   <input type="button" value="Spil igen" style="all: revert" onclick="reset()">
 </div>
 
-<div id="todo">
+<div id="todo" class="opgDiv" style="background-color: #ffa076">
+  <h1>To-do liste</h1>
 
 </div>
 
-<div id="temp">
+<div id="temp" class="opgDiv" style="background-color: #eeff80">
+  <h1>Temperaturomregner</h1>
 
 </div>
 
-<div id="billede">
+<div id="billede" class="opgDiv" style="background-color: #9486ff">
+  <h1>Billedekarrusel</h1>
 
 </div>
 
-<div id="farve">
+<div id="farve" class="opgDiv" style="background-color: #b0ffb3">
+  <h1>Farveskifter</h1>
 
 </div>
 
-<div id="valuta">
+<div id="valuta" class="opgDiv" style="background-color: #9cdbff">
+  <h1>Valutaomregner</h1>
 
 </div>
 
-<div id="kalender">
+<div id="kalender" class="opgDiv" style="background-color: #ff9eb9">
+  <h1>Kalender</h1>
 
 </div>
 </body>

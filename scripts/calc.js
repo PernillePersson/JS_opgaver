@@ -19,44 +19,40 @@ function clr() {
 function setMetode(x){
     result = document.getElementById("result").value;
     metode = x;
-    clr();
+    document.getElementById("result").value = "";
     firstdigit = result;
 }
 
 function solve(){
-    console.log(result)
-    console.log(firstdigit)
     result = document.getElementById("result").value;
-    console.log(result)
-    if (metode = 0){
+    if (metode == 0){
         add()
     }
-    if (metode = 1){
+    if (metode == 1){
         subtract()
     }
-    if (metode = 2){
+    if (metode == 2){
         multiply()
     }
-    if (metode = 3){
+    if (metode == 3){
         divide()
     }
-    console.log(metode)
     document.getElementById("result").value = result;
-    console.log(result)
+
 }
 
 function add(){
-    result = result + firstdigit;
+    result = Number(firstdigit) + Number(result);
 }
 
 function subtract(){
-    result = result - firstdigit;
+    result = Number(firstdigit) - Number(result);
 }
 
 function multiply(){
-    result = result * firstdigit;
+    result = Number(firstdigit) * Number(result);
 }
 
 function divide(){
-    result = result / firstdigit;
+    result = Number(firstdigit) / Number(result);
 }
