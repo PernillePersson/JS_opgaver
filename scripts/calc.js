@@ -2,6 +2,7 @@ var result = 0;
 var firstdigit = 0;
 var metode = 0;
 
+
 // Function that display value
 function tal(val) {
     document.getElementById("result").value += val;
@@ -10,6 +11,9 @@ function tal(val) {
 // Function that clear the display
 function clr() {
     document.getElementById("result").value = "";
+    result = 0;
+    firstdigit = 0;
+    metode = 0;
 }
 
 function setMetode(x){
