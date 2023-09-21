@@ -7,8 +7,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
   <script src="scripts/calc.js"></script>
   <script src="scripts/guessNum.js"></script>
+  <script src="scripts/colour.js"></script>
 </head>
-<body>
+<body id="side">
 <nav>
   <ul>
     <li>
@@ -105,7 +106,19 @@
 
 <div id="farve" class="opgDiv" style="background-color: #b0ffb3">
   <h1>Farveskifter</h1>
-
+  <button onclick="myFunction()" class="dropbtn">Vælg farve</button>
+  <div id="myDropdown" class="dropdown-content" >
+    <a onclick="changeColor('Aquamarine');">Aquamarine</a>
+    <a onclick="changeColor('Blueviolet');">Blueviolet</a>
+    <a onclick="changeColor('Cadetblue');">Cadetblue</a>
+    <a onclick="changeColor('Coral');">Coral</a>
+    <a onclick="changeColor('Darksalmon');">Darksalmon</a>
+    <a onclick="changeColor('Deeppink');">Deeppink</a>
+    <a onclick="changeColor('Hotpink');">Hotpink</a>
+    <a onclick="changeColor('Lawngreen');">Lawngreen</a>
+    <a onclick="changeColor('Lightgreen');">Lightgreen</a>
+    <a onclick="changeColor('Midnightblue');">Midnightblue</a>
+  </div>
 </div>
 
 <div id="valuta" class="opgDiv" style="background-color: #9cdbff">
