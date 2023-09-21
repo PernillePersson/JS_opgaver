@@ -8,33 +8,34 @@
   <script src="scripts/calc.js"></script>
   <script src="scripts/guessNum.js"></script>
   <script src="scripts/colour.js"></script>
+  <script src="scripts/todo.js"></script>
 </head>
 <body id="side">
 <nav>
-  <ul>
-    <li>
-      <a href="#lommeregner">Simpel Lommeregner</a>
+  <ul class="nav">
+    <li class="nav">
+      <a class="nav" href="#lommeregner">Simpel Lommeregner</a>
     </li>
-    <li>
-      <a href="#gættal">Gæt et tal</a>
+    <li class="nav">
+      <a class="nav" href="#gættal">Gæt et tal</a>
     </li>
-    <li>
-      <a href="#todo">To-do liste</a>
+    <li class="nav">
+      <a class="nav" href="#todo">To-do liste</a>
     </li>
-    <li>
-      <a href="#temp">Temperaturomregner</a>
+    <li class="nav">
+      <a class="nav" href="#temp">Temperaturomregner</a>
     </li>
-    <li>
-      <a href="#billede">Billede-karrusel</a>
+    <li class="nav">
+      <a class="nav" href="#billede">Billede-karrusel</a>
     </li>
-    <li>
-      <a href="#farve">Farveskifter</a>
+    <li class="nav">
+      <a class="nav" href="#farve">Farveskifter</a>
     </li>
-    <li>
-      <a href="#valuta">Valutaomregner</a>
+    <li class="nav">
+      <a class="nav" href="#valuta">Valutaomregner</a>
     </li>
-    <li>
-      <a href="#kalender">Simpel Kalender</a>
+    <li class="nav">
+      <a class="nav" href="#kalender">Simpel Kalender</a>
     </li>
   </ul>
 </nav>
@@ -91,7 +92,19 @@
 
 <div id="todo" class="opgDiv" style="background-color: #ffa076">
   <h1>To-do liste</h1>
+  <div id="myDIV" class="header">
+    <input class="td" type="text" id="myInput" placeholder="Tilføj...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
 
+  <ul class="td" id="myUL">
+    <li id="l1" class="td" onclick="check('l1')">Skydive</li>
+    <li id="l2" class="td" onclick="check('l2')">Bongeejump i Brazilien</li>
+    <li id="l3" class="td" onclick="check('l3')">Besøg maldiverne</li>
+    <li id="l4" class="td" onclick="check('l4')">Køb mælk</li>
+    <li id="l5" class="td" onclick="check('l5')">Snowboard i Østrig</li>
+    <li id="l6" class="td" onclick="check('l6')">Hack en bank</li>
+  </ul>
 </div>
 
 <div id="temp" class="opgDiv" style="background-color: #eeff80">
