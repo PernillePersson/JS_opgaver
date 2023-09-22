@@ -10,6 +10,7 @@
   <script src="scripts/colour.js"></script>
   <script src="scripts/todo.js"></script>
   <script src="scripts/img.js"></script>
+  <script src="scripts/temp.js"></script>
 </head>
 <body id="side">
 <nav>
@@ -108,9 +109,16 @@
   </ul>
 </div>
 
-<div id="temp" class="opgDiv" style="background-color: #eeff80">
+<div id="temp" class="opgDiv" style="background-color: #ffc55a">
   <h1>Temperaturomregner</h1>
-
+  <div style="display: flex;">
+    <input id="celsius" type="text" value="Celsius" style="all: revert">
+    <div style="margin: 4px; display: flex; flex-direction: column">
+      <button onclick="cConvert()">Omregn til Fahrenheit ></button>
+      <button onclick="fConvert()">< Omregn til Celsius</button>
+    </div>
+    <input id="fahrenheit" type="text" value="Fahrenheit" style="all: revert">
+  </div>
 </div>
 
 <div id="billede" class="opgDiv" style="background-color: #9486ff">
