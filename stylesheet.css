@@ -140,7 +140,7 @@ ul.td li.checked::before {
 }
 
 .close:hover {
-    background-color: #f44336;
+    background-color: #ff6f72;
     color: white;
 }
 
