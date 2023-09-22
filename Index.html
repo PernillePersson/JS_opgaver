@@ -11,6 +11,7 @@
   <script src="scripts/todo.js"></script>
   <script src="scripts/img.js"></script>
   <script src="scripts/temp.js"></script>
+  <script src="scripts/valuta.js"></script>
 </head>
 <body id="side">
 <nav>
@@ -160,7 +161,14 @@
 
 <div id="valuta" class="opgDiv" style="background-color: #9cdbff">
   <h1>Valutaomregner</h1>
-
+  <div style="display: flex;">
+    <input id="DKK" type="text" value="DKK" style="all: revert">
+    <div style="margin: 4px; display: flex; flex-direction: column">
+      <button onclick="dkkConvert()">Omregn til Euro ></button>
+      <button onclick="euroConvert()">< Omregn til Kroner</button>
+    </div>
+    <input id="EURO" type="text" value="EURO" style="all: revert">
+  </div>
 </div>
 
 <div id="kalender" class="opgDiv" style="background-color: #ff9eb9">
