@@ -1,5 +1,5 @@
 /*Til hele dokumentet*/
-h1, h2, h3, p{
+h1, h2, h3, h4, h5, p{
     font-family: Verdana, Serif;
     color: white;
 }
@@ -249,4 +249,18 @@ input.td {
 .imgBtn:active {
     position:relative;
     top:1px;
+}
+
+/*Til kalender*/
+tr.cal:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+tr.cal{
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+th.cal:nth-child(even),td:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.4);
 }
