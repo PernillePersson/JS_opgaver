@@ -62,7 +62,7 @@ input[type="button"]:hover, .symb:hover {
     background-color: #b674e2;
 }
 
-input[type="text"] {
+input.cal[type="text"] {
     padding: 40px 30px;
     border: none;
     border-radius: 5px;
@@ -224,6 +224,36 @@ input.td {
 .dropdown-content a:hover {background-color: #ddd;}
 
 .show {display:block;}
+
+/*Til valuta*/
+.valBtn {
+    font-size:15px;
+    font-family:Arial;
+    height:50px;
+    border-width:1px;
+    color:#fff;
+    border-color:#84bbf3;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+    background:linear-gradient(#bddbfa, #80b5ea);
+}
+
+.valBtn:hover {
+    background: linear-gradient(#80b5ea, #bddbfa);
+}
+
+.valInput{
+    all: revert;
+    font-size: 12px;
+    border-radius: 5px;
+    height: min-content;
+    margin: auto;
+}
+
 
 /*Til billedekarrusel*/
 .imgBtn {

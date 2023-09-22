@@ -48,7 +48,7 @@
   <table id="calcu" style="margin: auto">
     <tr>
       <td colspan="2">
-        <input type="text" id="result">
+        <input class="cal" type="text" id="result">
       </td>
       <td><input type="button" value="c" onclick="clr()"></td>
       <td><input class="symb" type="button" style="background-color: #e252d6" value="/" onclick="setMetode(3)"></td>
@@ -162,12 +162,13 @@
 <div id="valuta" class="opgDiv" style="background-color: #9cdbff">
   <h1>Valutaomregner</h1>
   <div style="display: flex;">
-    <input id="DKK" type="text" value="DKK" style="all: revert">
-    <div style="margin: 4px; display: flex; flex-direction: column">
-      <button onclick="dkkConvert()">Omregn til Euro ></button>
-      <button onclick="euroConvert()">< Omregn til Kroner</button>
+    <input id="DKK" type="text" value="DKK" class="valInput">
+    <div style="margin-inline: 8px; display: flex; flex-direction: column">
+      <button class="valBtn" onclick="dkkConvert()">Omregn til Euro ></button>
+      <div style="height: 2px"></div>
+      <button class="valBtn" onclick="euroConvert()">< Omregn til Kroner</button>
     </div>
-    <input id="EURO" type="text" value="EURO" style="all: revert">
+    <input id="EURO" type="text" value="EURO" class="valInput">
   </div>
 </div>
 
