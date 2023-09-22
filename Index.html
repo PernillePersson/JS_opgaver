@@ -9,6 +9,7 @@
   <script src="scripts/guessNum.js"></script>
   <script src="scripts/colour.js"></script>
   <script src="scripts/todo.js"></script>
+  <script src="scripts/img.js"></script>
 </head>
 <body id="side">
 <nav>
@@ -114,7 +115,22 @@
 
 <div id="billede" class="opgDiv" style="background-color: #9486ff">
   <h1>Billedekarrusel</h1>
+  <div style="text-align: center;">
+    <button onclick="changeImg(-1)">Forrige</button>
+    <button onclick="changeImg(1)">Næste</button>
+  </div>
+  <div>
+    <div class="imgs" style="display: block">
+      <img src="htmlmeme.jpg" alt="HTML meme" style="width: 100%">
+    </div>
+    <div class="imgs" style="display: none">
+      <img src="cssmeme.jpg" alt="CSS meme" style="width: 100%">
+    </div>
+    <div class="imgs" style="display: none">
+      <img src="jsmeme.jpg" alt="JavaScript meme" style="width: 100%">
+    </div>
 
+  </div>
 </div>
 
 <div id="farve" class="opgDiv" style="background-color: #b0ffb3">
